@@ -1,7 +1,9 @@
 React Digital Signage Player Management UI
 ==========================================
 
-Management UI for React Digital Signage Player
+Management UI for [React Digital Signage Player][Link 1]
+
+[Link 1]: https://github.com/henrik-leppa/react-digital-signage-player
 
 
 Copyright
