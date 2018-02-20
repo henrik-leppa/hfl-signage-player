@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/henrik-leppa/react-digital-signage-player/issues"
   },
-  "homepage": "https://github.com/henrik-leppa/react-digital-signage-player#readme",
+  "homepage": "https://github.com/henrik-leppa/react-digital-signage-player/front-end#readme",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

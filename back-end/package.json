@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/henrik-leppa/react-digital-signage-player/issues"
   },
-  "homepage": "https://github.com/henrik-leppa/react-digital-signage-player#readme",
+  "homepage": "https://github.com/henrik-leppa/react-digital-signage-player/back-end#readme",
   "dependencies": {
     "pouchdb-server": "^4.0.0"
   }
