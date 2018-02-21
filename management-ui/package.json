@@ -5,9 +5,6 @@
   "author": "Henrik Franciscus Leppä",
   "license": "UNLICENSED",
   "private": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/henrik-leppa/react-digital-signage-player.git"
@@ -15,5 +12,16 @@
   "bugs": {
     "url": "https://github.com/henrik-leppa/react-digital-signage-player/issues"
   },
-  "homepage": "https://github.com/henrik-leppa/react-digital-signage-player/management-ui#readme"
+  "homepage": "https://github.com/henrik-leppa/react-digital-signage-player/management-ui#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
