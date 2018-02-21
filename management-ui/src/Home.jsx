@@ -5,7 +5,7 @@ class Home extends Component {
     return (
       <main>
         <h1>
-          Home
+          React Digital Signage Player Management UI
         </h1>
       </main>
     );
