@@ -8,7 +8,7 @@ import Home from './Home';
 import Files from './Files';
 import PageNotFound from './PageNotFound';
 import Playlists from './Playlists';
-import Signs from './Signs';
+import Signs from '../containers/Signs';
 
 const styles = theme => ({
   app: {
