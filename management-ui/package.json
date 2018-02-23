@@ -26,9 +26,10 @@
     "redux-pouchdb": "^0.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run ensure-env && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "ensure-env": "cp --no-clobber .env.example .env"
   }
 }

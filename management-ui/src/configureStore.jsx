@@ -4,9 +4,11 @@ import { persistentStore } from 'redux-pouchdb';
 
 import rootReducer from './reducers'
 
+const backEndUrl = process.env.REACT_APP_BACK_END_URL;
+
 const configureStore = () => {
 
-  const remoteDb = new PouchDB('http://localhost:5984/signage-player');
+  const remoteDb = new PouchDB(`${backEndUrl}signage-player`);
 
   const localDb = new PouchDB('signage-player');
   localDb.sync(
