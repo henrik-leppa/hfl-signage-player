@@ -61,3 +61,6 @@ typings/
 db/
 log.txt
 config.json
+
+# Files uploaded by users
+uploads/
