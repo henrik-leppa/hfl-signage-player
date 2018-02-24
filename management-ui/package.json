@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "ensure-env": "cp --no-clobber .env.example .env"
+    "ensure-env": "cp --no-clobber .env.default .env"
   },
   "dependencies": {
     "material-ui": "^1.0.0-beta.34",

@@ -17,7 +17,7 @@
   "scripts": {
     "start": "npm run ensure-env && node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ensure-env": "cp --no-clobber .env.example .env"
+    "ensure-env": "cp --no-clobber .env.default .env"
   },
   "dependencies": {
     "cors": "^2.8.4",
