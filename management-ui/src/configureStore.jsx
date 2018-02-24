@@ -8,7 +8,11 @@ const backEndUrl = process.env.REACT_APP_BACK_END_URL;
 
 const configureStore = () => {
 
-  const remoteDb = new PouchDB(`${backEndUrl}signage-player`);
+  const remoteDb = new PouchDB(`${backEndUrl}database/signage-player`, {
+    ajax: {
+      withCredentials: false
+    }
+  });
 
   const localDb = new PouchDB('signage-player');
   localDb.sync(

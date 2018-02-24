@@ -13,6 +13,13 @@
     "url": "https://github.com/henrik-leppa/react-digital-signage-player/issues"
   },
   "homepage": "https://github.com/henrik-leppa/react-digital-signage-player/management-ui#readme",
+  "scripts": {
+    "start": "npm run ensure-env && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "ensure-env": "cp --no-clobber .env.example .env"
+  },
   "dependencies": {
     "material-ui": "^1.0.0-beta.34",
     "material-ui-icons": "^1.0.0-beta.17",
@@ -24,12 +31,5 @@
     "react-scripts": "1.1.1",
     "redux": "^3.7.2",
     "redux-pouchdb": "^0.1.1"
-  },
-  "scripts": {
-    "start": "npm run ensure-env && react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "ensure-env": "cp --no-clobber .env.example .env"
   }
 }

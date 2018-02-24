@@ -57,10 +57,13 @@ typings/
 # dotenv environment variables file
 .env
 
-# PouchDB Server
-db/
+# PouchDB
+pouch__all_dbs__/
+_replicator/
+_users/
 log.txt
 config.json
+signage-player/
 
 # Files uploaded by users
 uploads/
