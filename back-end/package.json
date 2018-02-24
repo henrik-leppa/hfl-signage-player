@@ -1,0 +1,30 @@
+{
+  "name": "react-digital-signage-player-back-end",
+  "version": "0.1.0",
+  "description": "Digital signage player written with a React front-end",
+  "author": "Henrik Franciscus Leppä",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrik-leppa/react-digital-signage-player.git"
+  },
+  "bugs": {
+    "url": "https://github.com/henrik-leppa/react-digital-signage-player/issues"
+  },
+  "homepage": "https://github.com/henrik-leppa/react-digital-signage-player/back-end#readme",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run ensure-env && node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ensure-env": "cp --no-clobber .env.default .env"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "express-pouchdb": "^4.0.0",
+    "multer": "^1.3.0",
+    "pouchdb": "^6.4.3"
+  }
+}
