@@ -1,8 +1,21 @@
 import * as types from '../actionTypes';
 
-export const textChange = props => {
+export const createNewSign = props => {
   return {
-    type: types.SIGNS_TEXT_CHANGE,
-    props
+    type: types.CREATE_NEW_SIGN,
+  };
+};
+
+export const updateSign = props => {
+  return {
+    type: types.UPDATE_SIGN,
+    props,
+  };
+};
+
+export const deleteSign = id => {
+  return {
+    type: types.DELETE_SIGN,
+    id,
   };
 };

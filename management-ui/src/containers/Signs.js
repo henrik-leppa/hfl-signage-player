@@ -1,19 +1,18 @@
 import { connect } from 'react-redux';
 import { default as SignsComponent } from '../components/Signs';
-import { textChange } from '../actions/signs';
+import { createNewSign } from '../actions/signs';
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    // text: state.signs[0].text
-    text: state.signs.text
+    signs: state.signs
   };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onChange: props => {
-      dispatch(textChange(props));
-    }
+    onNewSignClick: () => {
+      dispatch(createNewSign());
+    },
   };
 };
 

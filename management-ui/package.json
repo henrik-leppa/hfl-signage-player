@@ -30,6 +30,7 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1",
     "redux": "^3.7.2",
-    "redux-pouchdb": "^0.1.1"
+    "redux-pouchdb": "^0.1.1",
+    "uuid": "^3.2.1"
   }
 }
