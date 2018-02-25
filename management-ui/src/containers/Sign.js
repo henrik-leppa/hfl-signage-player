@@ -17,6 +17,6 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   };
 };
 
-const Signs = connect(mapStateToProps, mapDispatchToProps)(SignComponent);
+const Sign = connect(mapStateToProps, mapDispatchToProps)(SignComponent);
 
-export default Signs;
+export default Sign;

@@ -21,7 +21,7 @@ class Signs extends Component {
   render() {
     const { classes, signs } = this.props;
 
-    const signsComponents = signs.map(sign => (
+    const signComponents = signs.map(sign => (
       <Sign key={sign.id} {...sign} />
     ));
 
@@ -39,7 +39,7 @@ class Signs extends Component {
             New sign
           </Button>
         </p>
-        {signsComponents}
+        {signComponents}
       </main>
     );
   };
