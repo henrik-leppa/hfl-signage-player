@@ -1,26 +1,32 @@
 import { persistentReducer } from 'redux-pouchdb';
-import * as types from '../actionTypes'
+import * as types from '../actionTypes';
+import uuidv4 from 'uuid/v4';
 
-const signs = (state = { text: '' }, action) => {
-//  console.log(action);
+const signs = (state = [], action) => {
+  let newState;
   switch (action.type) {
-/*
-    case types.INSERT_SIGN:
-      return [
-        ...state,
-        action.sign
-      ];
-    case types.UPDATE_SIGN:
-      const newState = state.filter(sign => sign._id !== action.sign._id);
-      newState.push(action.sign);
+    case types.CREATE_NEW_SIGN:
+      newState = [ ...state ];
+      newState.unshift({
+        id: uuidv4(),
+        title: "Untitled",
+        html: '',
+      });
       return newState;
+    case types.UPDATE_SIGN:
+      return state.map(sign => {
+        if (sign.id === action.props.id) {
+          return {
+            ...sign,
+            ...action.props,
+          };
+        }
+        else {
+          return sign;
+        }
+      });
     case types.DELETE_SIGN:
-      return state.filter(sign => sign._id !== action.sign._id);
-*/
-    case types.SIGNS_TEXT_CHANGE:
-      return {
-        text: action.props.text,
-      };
+      return state.filter(sign => sign.id !== action.id);
     default:
       return state;
   }

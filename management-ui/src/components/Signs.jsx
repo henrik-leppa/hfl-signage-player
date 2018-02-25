@@ -1,31 +1,50 @@
 import React, { Component } from 'react';
-import { TextField } from 'material-ui';
+import { Button } from 'material-ui';
+import { withStyles } from 'material-ui/styles';
+import Sign from '../containers/Sign';
+
+const styles = theme => ({
+  heading: {
+    textAlign: 'center',
+  },
+  buttonParagraph: {
+    textAlign: 'center',
+  },
+});
 
 class Signs extends Component {
 
-  handleChange = event => {
-    this.props.onChange({ text: event.target.value });
+  handleNewSignClick = event => {
+    this.props.onNewSignClick();
   };
 
   render() {
+    const { classes, signs } = this.props;
+
+    const signsComponents = signs.map(sign => (
+      <Sign key={sign.id} {...sign} />
+    ));
+
     return (
       <main>
-        <h1>
+        <h1 className={classes.heading}>
           Signs
         </h1>
-        <TextField
-          fullWidth
-          label="Text"
-          id="text"
-          value={this.props.text}
-          onChange={this.handleChange}
-        />
-        <p>
-          {this.props.text}
+        <p className={classes.buttonParagraph}>
+          <Button
+            variant="raised"
+            color="primary"
+            onClick={this.handleNewSignClick}
+          >
+            New sign
+          </Button>
         </p>
+        {signsComponents}
       </main>
     );
-  }
-}
+  };
+};
 
-export default Signs;
+const SignsStyled = withStyles(styles)(Signs);
+
+export default SignsStyled;

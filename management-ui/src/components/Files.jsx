@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'material-ui';
 import { OpenInNew } from 'material-ui-icons';
 
 class Files extends Component {
@@ -26,15 +27,18 @@ class Files extends Component {
           <form
             action={uploadDirectory}
             method="POST"
-            enctype="multipart/form-data"
+            encType="multipart/form-data"
           >
             <p>
               <input type="file" name="file" />
             </p>
             <p>
-              <button type="submit">
-                Submit
-              </button>
+              <Button
+                variant="raised"
+                color="primary"
+              >
+                Send
+              </Button>
             </p>
           </form>
         </section>
