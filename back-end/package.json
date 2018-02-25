@@ -25,6 +25,7 @@
     "express": "^4.16.2",
     "express-pouchdb": "^4.0.0",
     "multer": "^1.3.0",
-    "pouchdb": "^6.4.3"
+    "pouchdb": "^6.4.3",
+    "serve-index": "^1.9.1"
   }
 }
