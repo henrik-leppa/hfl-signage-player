@@ -1,0 +1,24 @@
+.playlist {
+  height: 100%;
+  width: 100%;
+}
+
+.sign {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.full-page-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.full-page-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}

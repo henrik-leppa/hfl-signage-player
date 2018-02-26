@@ -40,10 +40,7 @@ class Files extends Component {
               <input type="file" name="file" />
             </p>
             <p>
-              <Button
-                variant="raised"
-                color="primary"
-              >
+              <Button type="submit" variant="raised" color="primary">
                 Send
               </Button>
             </p>
