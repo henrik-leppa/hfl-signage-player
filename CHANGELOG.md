@@ -12,18 +12,25 @@ Versioning].
 
 ### Added
 
+- Authentication
+- Connection Lost Indicator
+- Listing Files In Front-end
+
+### Fixed
+
+- No Upload Success Indicator
+
+
+[0.1.0] – 2018-02-27
+--------------------
+
+### Added
+
 - Editing signs
 - Uploading files
 - Editing playlists
 - Playing playlists
 - Instructions on how to set up on Ubuntu
-- Authentication
-
-
-[0.1.0] – 2018-02-25
----------------------
-
-(Empty)
 
 
 [Keep a Changelog]: http://keepachangelog.com/en/1.0.0/
