@@ -37,7 +37,8 @@ class Playlist extends Component {
           ...this.state,
           playlistSigns,
         });
-        setTimeout(this.transition, Playlist.signDurationMilliseconds);
+        // Defer `setSignTimeout` so that `ref` functions can fire.
+        setTimeout(this.setSignTimeout);
       }
     }
   };
@@ -52,6 +53,7 @@ class Playlist extends Component {
           - 100 / Playlist.transitionframes
         ),
       });
+      this.setVolumes();
       setTimeout(this.transition, (
         Playlist.transitionDurationMilliseconds / Playlist.transitionframes
       ));
@@ -63,7 +65,58 @@ class Playlist extends Component {
         currentPosition: this.nextPosition,
         currentSignOpacityAndVolumePercent: 100,
       });
+      this.setVolumes();
+      this.setSignTimeout();
+    }
+  }
+
+  setSignTimeout = () => {
+    if (this.currentVideoElement) {
+      const { duration } = this.currentVideoElement;
+      if (Number.isFinite(duration)) {
+        setTimeout(
+          this.transition,
+          duration * 1000 - Playlist.signDurationMilliseconds,
+        );
+      }
+      else {
+        this.currentVideoElement.addEventListener('ended', this.transition);
+      }
+    }
+    else {
       setTimeout(this.transition, Playlist.signDurationMilliseconds);
+    }
+  }
+
+  setVolumes = () => {
+      if (this.currentVideoElement) {
+        this.currentVideoElement.volume = (
+          this.state.currentSignOpacityAndVolumePercent / 100
+        )
+      }
+      if (this.nextVideoElement) {
+        this.nextVideoElement.volume = (
+          this.nextSignOpacityAndVolumePercent / 100
+        )
+      }
+  }
+
+  currentSignElementAloneRef = (currentSignElement) => {
+    if (currentSignElement) {
+      this.currentVideoElement = currentSignElement.querySelector('video');
+    }
+    this.nextSignElement = null;
+  }
+
+  currentSignElementWithNextRef = (currentSignElement) => {
+    if (currentSignElement) {
+      this.currentVideoElement = currentSignElement.querySelector('video');
+    }
+  }
+
+  nextSignElementRef = (nextSignElement) => {
+    if (nextSignElement) {
+      this.nextVideoElement = nextSignElement.querySelector('video');
     }
   }
 
@@ -83,7 +136,7 @@ class Playlist extends Component {
     return next;
   };
 
-  get nextSignSignOpacityAndVolumePercent() {
+  get nextSignOpacityAndVolumePercent() {
     return 100 - this.state.currentSignOpacityAndVolumePercent;
   };
 
@@ -96,6 +149,7 @@ class Playlist extends Component {
           <div className="playlist">
             <div
               className="sign"
+              ref={this.currentSignElementAloneRef}
               dangerouslySetInnerHTML={{
                 __html: playlistSigns[currentPosition].html
               }}
@@ -108,6 +162,7 @@ class Playlist extends Component {
           <div className="playlist">
             <div
               className="sign"
+              ref={this.currentSignElementWithNextRef}
               style={{
                 opacity: this.state.currentSignOpacityAndVolumePercent / 100,
               }}
@@ -117,8 +172,9 @@ class Playlist extends Component {
             />
             <div
               className="sign"
+              ref={this.nextSignElementRef}
               style={{
-                opacity: this.nextSignSignOpacityAndVolumePercent / 100,
+                opacity: this.nextSignOpacityAndVolumePercent / 100,
               }}
               dangerouslySetInnerHTML={{
                 __html: playlistSigns[this.nextPosition].html
@@ -131,7 +187,8 @@ class Playlist extends Component {
     else {
       return (
         <p>
-          <strong>Error!</strong> Check console for details.
+          <strong>Error!</strong> Check that the playlist has at least one sign
+          and check the console for errors.
         </p>
       );
     }
