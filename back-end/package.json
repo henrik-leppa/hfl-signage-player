@@ -1,18 +1,18 @@
 {
-  "name": "react-digital-signage-player-back-end",
+  "name": "hfl-signage-player-back-end",
   "version": "0.1.0",
-  "description": "Digital signage player written with a React front-end",
+  "description": "Back-end for a digital signage player written by Henrik Franciscus Leppä",
   "author": "Henrik Franciscus Leppä",
   "license": "UNLICENSED",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/henrik-leppa/react-digital-signage-player.git"
+    "url": "git+https://github.com/henrik-leppa/hfl-signage-player.git"
   },
   "bugs": {
-    "url": "https://github.com/henrik-leppa/react-digital-signage-player/issues"
+    "url": "https://github.com/henrik-leppa/hfl-signage-player/issues"
   },
-  "homepage": "https://github.com/henrik-leppa/react-digital-signage-player/back-end#readme",
+  "homepage": "https://github.com/henrik-leppa/hfl-signage-player/back-end#readme",
   "main": "app.js",
   "scripts": {
     "start": "npm run ensure-env && node app.js",

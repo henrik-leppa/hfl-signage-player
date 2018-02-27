@@ -14,9 +14,17 @@ class Playlists extends Component {
 
     return (
       <main>
-        <h1>
-          React Digital Signage Player
-        </h1>
+        <header>
+          <h1>
+            HFL Signage Player: Front-end 0.1.0
+          </h1>
+          <p>
+            <small>
+              Copyright © 2018 Henrik Franciscus Leppä<br />
+              All rights reserved.
+            </small>
+          </p>
+        </header>
         <p>
           This web app plays the playlists that have been created in Management
           UI.

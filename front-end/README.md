@@ -1,7 +1,7 @@
-React Digital Signage Player Front-end
-======================================
+HFL Signage Player: Front-end
+=============================
 
-Front-end for [React Digital Signage Player][RDSP]
+Front-end for [HFL Signage Player]
 
 This web app plays the playlists that have been created in [Management
 UI](./management-ui/).
@@ -32,4 +32,4 @@ Copyright © 2018 Henrik Franciscus Leppä
 All rights reserved.
 
 
-[RDSP]: https://github.com/henrik-leppa/react-digital-signage-player
+[HFL Signage Player]: https://github.com/henrik-leppa/hfl-signage-player
