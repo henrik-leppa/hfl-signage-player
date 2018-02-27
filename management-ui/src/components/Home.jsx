@@ -23,10 +23,15 @@ class Home extends Component {
           This is the management UI for React Digital Signage Player.
         </p>
         <p>
-          Here you can create HTML signs that show products and such, upload
-          files (like images and videos) that you can attach to those signs, and
-          create playlist &ndash; collections of signs that are show in
-          sequence.
+          With this web app you can create HTML signs that show products and
+          such, upload files (like images and videos) that you can attach to
+          those signs, and create playlist &ndash; collections of signs that are
+          shown in sequence.
+        </p>
+        <p>
+          <strong>Note:</strong> All the work you do is autosaved. Your changes
+          only show up in Front-end once you refresh the page in it. Autosaving
+          cannot be turned off in this version.
         </p>
       </main>
     );

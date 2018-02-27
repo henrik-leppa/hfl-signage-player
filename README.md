@@ -1,12 +1,36 @@
 React Digital Signage Player
 ============================
 
-Digital signage player written with a React.js front-end
+Digital signage player written by Henrik Franciscus Leppä
+
+Main technologies:
+- [Express.js 4](https://expressjs.com/)
+- [Material-UI v1](https://material-ui-next.com/)
+- [Node.js](https://nodejs.org/)
+- [PouchDB](https://pouchdb.com/)
+- [React.js](https://reactjs.org/)
+- [React Router 4](https://github.com/ReactTraining/react-router)
+- [Redux](https://redux.js.org/)
 
 This project is made up of 3 subprojects:
 - [Back-end](./back-end/)
 - [Front-end](./front-end/)
 - [Management UI](./management-ui/)
+
+
+Getting Started / Installation
+------------------------------
+
+1. Setup the environment.
+
+   This project has only been tested to work on the following environment:
+   - Operating system: Ubuntu 16.04.3 LTS Desktop AMD64
+   - Run-time environment: Node.js 8.9.4
+   - Web browser: Chromium (latest)
+2. Start [Back-end](./back-end/).
+3. Start [Management UI](./management-ui/), and create some signs, playlists and
+   (optionally) upload some files.
+4. Start [Front-end](./front-end/) and open a playlist.
 
 
 Workflow
@@ -18,7 +42,7 @@ This project uses [git-flow] with default settings.
 Copyright
 ---------
 
-Copyright (c) 2018 Henrik Franciscus Leppä
+Copyright © 2018 Henrik Franciscus Leppä
 
 All rights reserved.
 

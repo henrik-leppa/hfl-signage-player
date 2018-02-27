@@ -120,7 +120,7 @@ class Sign extends Component {
             color="secondary"
             onClick={this.handleDeleteClick}
           >
-            Delete
+            Delete sign
           </Button>
         </ExpansionPanelDetails>
       </ExpansionPanel>
