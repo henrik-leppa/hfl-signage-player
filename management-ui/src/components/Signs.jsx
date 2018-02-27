@@ -39,7 +39,7 @@ class Signs extends Component {
         </p>
         <p className={classes.noteParagraph}>
           <strong>Note:</strong> To create a full-page image or video sign, you
-          must first upload the image of video file in &ldquo;Files&rdquo; and
+          must first upload the image or video file in &ldquo;Files&rdquo; and
           then create a sign for it.
         </p>
         <p className={classes.buttonParagraph}>

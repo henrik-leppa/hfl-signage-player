@@ -25,7 +25,7 @@ class Home extends Component {
         <p>
           With this web app you can create HTML signs that show products and
           such, upload files (like images and videos) that you can attach to
-          those signs, and create playlist &ndash; collections of signs that are
+          those signs, and create playlists &ndash; collections of signs that are
           shown in sequence.
         </p>
         <p>

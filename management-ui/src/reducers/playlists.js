@@ -55,8 +55,8 @@ const playlists = (state = [], action) => {
       newState = [ ...state ];
       newState.unshift({
         id: uuidv4(),
-        title: "Untitled",
-        signIds: []
+        title: "Untitled Playlist",
+        signIds: [],
       });
       return newState;
     case types.UPDATE_PLAYLIST:

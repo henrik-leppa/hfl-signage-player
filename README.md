@@ -26,7 +26,13 @@ Getting Started / Installation
    This project has only been tested to work on the following environment:
    - Operating system: Ubuntu 16.04.3 LTS Desktop AMD64
    - Run-time environment: Node.js 8.9.4
-   - Web browser: Chromium (latest)
+     - I found the ["Installing Node.js via package manager"][Node.js
+       installation] instructions to be the easiest way to install it.
+       - To use this method however, you first need to install `curl` with:
+         ```
+         sudo apt-get install curl
+         ```
+   - Web browser: Mozilla Firefox (latest)
 2. Start [Back-end](./back-end/).
 3. Start [Management UI](./management-ui/), and create some signs, playlists and
    (optionally) upload some files.
@@ -48,3 +54,4 @@ All rights reserved.
 
 
 [git-flow]: https://github.com/nvie/gitflow
+[Node.js installation]: https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions

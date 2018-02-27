@@ -9,7 +9,7 @@ const signs = (state = [], action) => {
       newState = [ ...state ];
       newState.unshift({
         id: uuidv4(),
-        title: "Untitled",
+        title: "Untitled Sign",
         html: '',
       });
       return newState;

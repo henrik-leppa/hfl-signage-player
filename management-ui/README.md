@@ -5,7 +5,7 @@ Management UI for [React Digital Signage Player][RDSP]
 
 With this web app you can create HTML signs that show products and such, upload
 files (like images and videos) that you can attach to those signs, and create
-playlist – collections of signs that are shown in sequence.
+playlists – collections of signs that are shown in sequence.
 
 **Note:** All the work you do is autosaved. Your changes only show up in
 [Front-end](../front-end/) once you refresh the page in it. Autosaving cannot be
