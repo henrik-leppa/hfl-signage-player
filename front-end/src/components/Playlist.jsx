@@ -26,7 +26,7 @@ class Playlist extends Component {
       );
 
       let playlistSigns;
-      if (playlist && 1 < allSigns.length) {
+      if (playlist && 0 < playlist.signIds.length && 1 < allSigns.length) {
         playlistSigns = playlist.signIds.map(
           signId => allSigns.find(sign => sign.id === signId)
         );
