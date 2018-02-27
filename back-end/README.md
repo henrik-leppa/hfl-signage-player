@@ -12,6 +12,7 @@ Getting Started / Installation
 1. Open a command-line in the root of the subproject.
 2. Run `npm install` or `yarn`.
 3. Run `npm start` or `yarn start`
+   - The command-line will show which port the server is using in localhost.
    - To change the port, change the `PORT` variable in the `.env` file that
      `npm start` creates, and restart this subproject.
 
@@ -22,7 +23,7 @@ Getting Started / Installation
 Copyright
 ---------
 
-Copyright (c) 2018 Henrik Franciscus Leppä
+Copyright © 2018 Henrik Franciscus Leppä
 
 All rights reserved.
 

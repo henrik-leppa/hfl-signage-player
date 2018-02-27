@@ -35,7 +35,7 @@ class Playlists extends Component {
             color="primary"
             onClick={this.handleNewPlaylistClick}
           >
-            New playlist
+            Create new playlist
           </Button>
         </p>
         {playlistComponents}

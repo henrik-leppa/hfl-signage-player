@@ -17,13 +17,14 @@ class Playlists extends Component {
         <h1>
           React Digital Signage Player
         </h1>
+        <p>
+          This web app plays the playlists that have been created in Management
+          UI.
+        </p>
         <section>
           <h2>
             Playlists
           </h2>
-          <p>
-            <strong>Note:</strong> Playlists can be created in Management UI.
-          </p>
           <ul>
             {linkComponents}
           </ul>

@@ -27,6 +27,14 @@ class Files extends Component {
             Browser files in Back-end (check after send).
           </a>
         </p>
+        <p>
+          <strong>Note:</strong> In addition to uploading the file, you must
+          also include it in a sign, before you can use it in a playlist.
+        </p>
+        <p>
+          <strong>Note:</strong> You can get a file&rsquo;s <abbr>URL</abbr> by
+          right-clicking it and selecting &ldquo;Copy link address&rdquo;.
+        </p>
         <section>
           <h2>
             Upload
