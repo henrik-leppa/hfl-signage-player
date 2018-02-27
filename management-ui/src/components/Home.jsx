@@ -13,9 +13,17 @@ class Home extends Component {
     const { classes } = this.props;
     return (
       <main className={classes.mainContent}>
-        <h1>
-          HFL Signage Player: Management UI
-        </h1>
+        <header>
+          <h1>
+            HFL Signage Player: Management UI 0.1.0
+          </h1>
+          <p>
+            <small>
+              Copyright © 2018 Henrik Franciscus Leppä<br />
+              All rights reserved.
+            </small>
+          </p>
+        </header>
         <p>
           Welcome!
         </p>

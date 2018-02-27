@@ -16,7 +16,13 @@ app.use('/' + databasePath, expressPouchDB(PouchDB));
 
 app.get('/', function(req, res){
   res.send(
-    '<h1>HFL Signage Player: Back-end</h1>'
+    '<h1>HFL Signage Player: Back-end 0.1.0</h1>'
+    + '<p>'
+    + '  <small>'
+    + '    Copyright © 2018 Henrik Franciscus Leppä<br>'
+    + '    All rights reserved.'
+    + '  </small>'
+    + '</p>'
     + '<p>'
     + '  Uploaded files can be found at: '
     + '  <a href="/' + uploadPath + '"><code>/' + uploadPath + '</code></a>'
@@ -48,5 +54,7 @@ var port = process.env.PORT;
 
 app.listen(port, console.log(
   'hfl-player-back-end is now running.' + '\n\n'
+  + 'Copyright © 2018 Henrik Franciscus Leppä' + '\n'
+  + 'All rights reserved.' + '\n\n'
   + '  Local:            http://localhost:' + port + '/' + '\n'
 ));
