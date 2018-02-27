@@ -1,7 +1,7 @@
-React Digital Signage Player Management UI
-==========================================
+HFL Signage Player: Management UI
+=================================
 
-Management UI for [React Digital Signage Player][RDSP]
+Management UI for [HFL Signage Player]
 
 With this web app you can create HTML signs that show products and such, upload
 files (like images and videos) that you can attach to those signs, and create
@@ -37,4 +37,4 @@ Copyright © 2018 Henrik Franciscus Leppä
 All rights reserved.
 
 
-[RDSP]: https://github.com/henrik-leppa/react-digital-signage-player
+[HFL Signage Player]: https://github.com/henrik-leppa/hfl-signage-player

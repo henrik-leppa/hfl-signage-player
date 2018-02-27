@@ -11,7 +11,7 @@ class AppBar extends React.Component {
     return (
       <MaterialUiAppBar>
         <h1 className={globalStylesClassnames.hiddenInVisualMedia}>
-          React Digital Signage Player
+          HFL Signage Player: Management UI
         </h1>
         <Toolbar>
           <h2 className={globalStylesClassnames.hiddenInVisualMedia}>

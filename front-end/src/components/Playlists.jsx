@@ -15,7 +15,7 @@ class Playlists extends Component {
     return (
       <main>
         <h1>
-          React Digital Signage Player
+          HFL Signage Player: Front-end
         </h1>
         <p>
           This web app plays the playlists that have been created in Management

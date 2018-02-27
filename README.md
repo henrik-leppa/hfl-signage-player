@@ -1,5 +1,5 @@
-React Digital Signage Player
-============================
+HFL Signage Player
+==================
 
 Digital signage player written by Henrik Franciscus Leppä
 

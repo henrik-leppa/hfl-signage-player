@@ -1,7 +1,7 @@
-React Digital Signage Player Back-end
-=====================================
+HFL Signage Player: Back-end
+============================
 
-[Express.js] back-end for [React Digital Signage Player][RDSP]
+[Express.js] back-end for [HFL Signage Player]
 
 Hosts a [PouchDB] database and an upload directory.
 
@@ -30,4 +30,4 @@ All rights reserved.
 
 [Express.js]: https://github.com/expressjs/express
 [PouchDB]: https://github.com/pouchdb/pouchdb
-[RDSP]: https://github.com/henrik-leppa/react-digital-signage-player
+[HFL Signage Player]: https://github.com/henrik-leppa/hfl-signage-player

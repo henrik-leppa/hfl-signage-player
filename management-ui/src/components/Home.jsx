@@ -14,13 +14,13 @@ class Home extends Component {
     return (
       <main className={classes.mainContent}>
         <h1>
-          React Digital Signage Player Management UI
+          HFL Signage Player: Management UI
         </h1>
         <p>
           Welcome!
         </p>
         <p>
-          This is the management UI for React Digital Signage Player.
+          This is the management UI for HFL Signage Player.
         </p>
         <p>
           With this web app you can create HTML signs that show products and
