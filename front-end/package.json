@@ -1,0 +1,33 @@
+{
+  "name": "hfl-signage-player-front-end",
+  "version": "0.1.0",
+  "description": "Front-end for a digital signage player written by Henrik Franciscus Leppä",
+  "author": "Henrik Franciscus Leppä",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrik-leppa/hfl-signage-player.git"
+  },
+  "bugs": {
+    "url": "https://github.com/henrik-leppa/hfl-signage-player/issues"
+  },
+  "homepage": "https://github.com/henrik-leppa/hfl-signage-player/front-end#readme",
+  "scripts": {
+    "start": "npm run ensure-env && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "ensure-env": "cp --no-clobber .env.default .env"
+  },
+  "dependencies": {
+    "pouchdb": "^6.4.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1",
+    "redux": "^3.7.2",
+    "redux-pouchdb": "^0.1.1"
+  }
+}
