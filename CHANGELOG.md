@@ -10,16 +10,6 @@ Versioning].
 [Unreleased]
 ------------
 
-### Added
-
-- Authentication
-- Connection Lost Indicator
-- Listing Files In Front-end
-
-### Fixed
-
-- No Upload Success Indicator
-
 
 [0.1.0] – 2018-02-27
 --------------------
@@ -35,5 +25,5 @@ Versioning].
 
 [Keep a Changelog]: http://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: http://semver.org/spec/v2.0.0.html
-[Unreleased]: https://github.com/henrik-leppa/hfl-signage-player/compare/732fad4eb5b81bb6947c52211bbdda8ce201ee8a...develop
+[Unreleased]: https://github.com/henrik-leppa/hfl-signage-player/compare/0.1.0...develop
 [0.1.0]: https://github.com/henrik-leppa/hfl-signage-player/compare/732fad4eb5b81bb6947c52211bbdda8ce201ee8a...0.1.0
