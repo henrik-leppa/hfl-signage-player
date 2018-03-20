@@ -21,14 +21,22 @@ This project is made up of 3 subprojects:
 Getting Started / Installation
 ------------------------------
 
-1. Setup the environment.
+This project is cross-platform software, and as such it should be possible to
+run it on any operating system that supports the software listed in the
+"Install" step, including, but not limited to: GNU/Linux, BSD, Microsoft
+Windows, and macOS.
 
-   This project has only been tested to work on the following environment:
-   - Operating system: Ubuntu 16.04.3 LTS Desktop AMD64
-   - Run-time environment: Node.js 8.9.4
-     - (Recommended) Install Node.js using [Node Version Manager (NVM)] (or its
-       [Windows-equivalents]).
-   - Web browser: Mozilla Firefox (latest)
+### Steps
+
+1. Install:
+   - Run-time environment:
+     - Node.js 8.9.4
+       - (Recommended) Install using [Node Version Manager (NVM)] (or its
+         [Windows-equivalents]).
+   - Web browser:
+     - Mozilla Firefox (latest) \
+       or
+     - Chromium / Google Chrome (latest)
 2. Start [Back-end](./back-end/).
 3. Start [Management UI](./management-ui/), and create some signs, playlists and
    (optionally) upload some files.
