@@ -29,6 +29,9 @@ class Playlists extends Component {
           This web app plays the playlists that have been created in Management
           UI.
         </p>
+        <p>
+          You can toggle full screen mode by pressing the <kbd>F11</kbd> key.
+        </p>
         <section>
           <h2>
             Playlists
