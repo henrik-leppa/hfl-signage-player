@@ -15,6 +15,7 @@ Versioning].
 - When the browser cannot determine video length in Front-end, this fact is
   logged into the console
 - Instructions on how to set Front-end to full screen mode with "F11" key
+- Recommendation to use Node Version Manager (NVM)
 
 
 [0.1.0] – 2018-02-27
