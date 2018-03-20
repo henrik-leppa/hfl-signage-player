@@ -80,6 +80,11 @@ class Playlist extends Component {
         );
       }
       else {
+        console.log(
+          'Videos\'s length could not be determined.' + '\n'
+          + 'It will play to its end, but it will not fade out.' + '\n\n'
+          + 'Video: ', this.currentVideoElement
+        );
         this.currentVideoElement.addEventListener('ended', this.transition);
       }
     }

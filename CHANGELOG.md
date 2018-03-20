@@ -10,6 +10,11 @@ Versioning].
 [Unreleased]
 ------------
 
+### Added
+
+- When the browser cannot determine video length in Front-end, this fact is
+  logged into the console
+
 
 [0.1.0] – 2018-02-27
 --------------------
