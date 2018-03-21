@@ -3,7 +3,10 @@ HFL Signage Player
 
 Digital signage player written by Henrik Franciscus Leppä
 
-Main technologies:
+
+Main Technologies
+-----------------
+
 - [Express.js 4](https://expressjs.com/)
 - [Material-UI v1](https://material-ui-next.com/)
 - [Node.js](https://nodejs.org/)
@@ -11,6 +14,10 @@ Main technologies:
 - [React.js](https://reactjs.org/)
 - [React Router 4](https://github.com/ReactTraining/react-router)
 - [Redux](https://redux.js.org/)
+
+
+Subprojects
+-----------
 
 This project is made up of 3 subprojects:
 - [Back-end](./back-end/)
