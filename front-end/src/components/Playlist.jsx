@@ -17,23 +17,23 @@ class Playlist extends Component {
 
   transition = () => {
     if (0 < this.state.currentSignOpacityAndVolumePercent) {
+      const {
+        transitionframes, transitionDurationMilliseconds
+      } = this.constructor;
       // Fade the current sign a little and wait a while
       this.setState({
-        ...this.state,
         currentSignOpacityAndVolumePercent: (
-          this.state.currentSignOpacityAndVolumePercent
-          - 100 / Playlist.transitionframes
+          this.state.currentSignOpacityAndVolumePercent - 100 / transitionframes
         ),
       });
       this.setVolumes();
       setTimeout(this.transition, (
-        Playlist.transitionDurationMilliseconds / Playlist.transitionframes
+        transitionDurationMilliseconds / transitionframes
       ));
     }
     else {
       // Old sign is invisible, remove it and wait a long time
       this.setState({
-        ...this.state,
         currentPosition: this.nextPosition,
         currentSignOpacityAndVolumePercent: 100,
       });
@@ -56,7 +56,7 @@ class Playlist extends Component {
       if (Number.isFinite(duration)) {
         setTimeout(
           this.transition,
-          duration * 1000 - Playlist.signDurationMilliseconds,
+          duration * 1000 - this.constructor.signDurationMilliseconds,
         );
       }
       else {
@@ -69,37 +69,37 @@ class Playlist extends Component {
       }
     }
     else {
-      setTimeout(this.transition, Playlist.signDurationMilliseconds);
+      setTimeout(this.transition, this.constructor.signDurationMilliseconds);
     }
   }
 
   setVolumes = () => {
-      if (this.currentVideoElement) {
-        this.currentVideoElement.volume = (
-          this.state.currentSignOpacityAndVolumePercent / 100
-        )
-      }
-      if (this.nextVideoElement) {
-        this.nextVideoElement.volume = (
-          this.nextSignOpacityAndVolumePercent / 100
-        )
-      }
+    if (this.currentVideoElement) {
+      this.currentVideoElement.volume = (
+        this.state.currentSignOpacityAndVolumePercent / 100
+      )
+    }
+    if (this.nextVideoElement) {
+      this.nextVideoElement.volume = (
+        this.nextSignOpacityAndVolumePercent / 100
+      )
+    }
   }
 
-  currentSignElementAloneRef = (currentSignElement) => {
+  currentSignElementAloneRef = currentSignElement => {
     if (currentSignElement) {
       this.currentVideoElement = currentSignElement.querySelector('video');
     }
     this.nextSignElement = null;
   }
 
-  currentSignElementWithNextRef = (currentSignElement) => {
+  currentSignElementWithNextRef = currentSignElement => {
     if (currentSignElement) {
       this.currentVideoElement = currentSignElement.querySelector('video');
     }
   }
 
-  nextSignElementRef = (nextSignElement) => {
+  nextSignElementRef = nextSignElement => {
     if (nextSignElement) {
       this.nextVideoElement = nextSignElement.querySelector('video');
     }
