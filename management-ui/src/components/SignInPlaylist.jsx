@@ -28,36 +28,31 @@ class SignInPlaylist extends Component {
   };
 
   render() {
-    const { allSigns, arrayPosition, arrayLength, signId } = this.props;
-    let signTitle = '';
-    const sign = allSigns.find(sign => sign.id === signId);
-    if (sign) {
-      signTitle = sign.title;
-    }
+    const { sign={}, arrayPosition, arrayLength } = this.props;
 
     return (
       <li>
         <Toolbar>
-        <IconButton
-          title="Move up"
-          disabled={arrayPosition === 0}
-          onClick={this.handleSignMoveClick('up')}
-        >
-          <ArrowUpward />
-        </IconButton>
-        <IconButton
-          title="Move down"
-          disabled={arrayPosition === arrayLength - 1}
-          onClick={this.handleSignMoveClick('down')}
-        >
-          <ArrowDownward />
-        </IconButton>
-        <IconButton title="Remove" onClick={this.handleSignRemoveClick}>
-          <Delete />
-        </IconButton>
-        <div>
-          {signTitle}
-        </div>
+          <IconButton
+            title="Move up"
+            disabled={arrayPosition === 0}
+            onClick={this.handleSignMoveClick('up')}
+          >
+            <ArrowUpward />
+          </IconButton>
+          <IconButton
+            title="Move down"
+            disabled={arrayPosition === arrayLength - 1}
+            onClick={this.handleSignMoveClick('down')}
+          >
+            <ArrowDownward />
+          </IconButton>
+          <IconButton title="Remove" onClick={this.handleSignRemoveClick}>
+            <Delete />
+          </IconButton>
+          <div>
+            {sign.title}
+          </div>
         </Toolbar>
       </li>
     );

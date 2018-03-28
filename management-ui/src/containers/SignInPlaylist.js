@@ -8,8 +8,9 @@ import {
 } from '../actions/playlists';
 
 const mapStateToProps = (state, ownProps) => {
+  const { signId } = ownProps;
   return {
-    allSigns: state.signs,
+    sign: state.signs.find(sign => sign.id === signId),
   };
 };
 
