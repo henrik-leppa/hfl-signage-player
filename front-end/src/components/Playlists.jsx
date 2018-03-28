@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PlaylistList from './PlaylistList';
+import PlaylistList from '../containers/PlaylistList';
 
 class Playlists extends Component {
 
@@ -28,7 +28,7 @@ class Playlists extends Component {
           <h2>
             Playlists
           </h2>
-          <PlaylistList playlists={this.props.playlists} />
+          <PlaylistList />
         </section>
       </main>
     );
