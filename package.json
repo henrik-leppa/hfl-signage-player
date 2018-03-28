@@ -5,40 +5,6 @@
   "author": "Henrik Franciscus Leppä",
   "license": "UNLICENSED",
   "private": true,
-  "scripts": {
-    "ensure-env":
-      "npm-run-all --parallel --print-label --aggregate-output ensure-env:*",
-    "ensure-env:back-end":
-      "cd back-end && npm run ensure-env",
-    "ensure-env:front-end":
-      "cd front-end && npm run ensure-env",
-    "ensure-env:management-ui":
-      "cd management-ui && npm run ensure-env",
-    "install:back-end":
-      "cd back-end && npm install",
-    "install:front-end":
-      "cd front-end && npm install",
-    "install:management-ui":
-      "cd management-ui && npm install",
-    "postinstall":
-      "npm-run-all --parallel --print-label --aggregate-output install:*",
-    "start":
-      "npm-run-all --parallel --print-label start:*",
-    "start:back-end":
-      "cd back-end && npm start",
-    "start:front-end":
-      "cd front-end && npm start",
-    "start:management-ui":
-      "cd management-ui && npm start",
-    "test":
-      "npm-run-all --parallel --print-label --aggregate-output test:*",
-    "test:back-end":
-      "cd back-end && npm test",
-    "test:front-end":
-      "cd front-end && npm test",
-    "test:management-ui":
-      "cd management-ui && npm test"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/henrik-leppa/hfl-signage-player.git"
@@ -47,6 +13,24 @@
     "url": "https://github.com/henrik-leppa/hfl-signage-player/issues"
   },
   "homepage": "https://github.com/henrik-leppa/hfl-signage-player#readme",
+  "scripts": {
+    "ensure-env": "npm-run-all --parallel --print-label --aggregate-output ensure-env:*",
+    "ensure-env:back-end": "cd back-end && npm run ensure-env",
+    "ensure-env:front-end": "cd front-end && npm run ensure-env",
+    "ensure-env:management-ui": "cd management-ui && npm run ensure-env",
+    "install:back-end": "cd back-end && npm install",
+    "install:front-end": "cd front-end && npm install",
+    "install:management-ui": "cd management-ui && npm install",
+    "postinstall": "npm-run-all --parallel --print-label --aggregate-output install:*",
+    "start": "npm-run-all --parallel --print-label start:*",
+    "start:back-end": "cd back-end && npm start",
+    "start:front-end": "cd front-end && npm start",
+    "start:management-ui": "cd management-ui && npm start",
+    "test": "npm-run-all --parallel --print-label --aggregate-output test:*",
+    "test:back-end": "cd back-end && npm test",
+    "test:front-end": "cd front-end && npm test",
+    "test:management-ui": "cd management-ui && npm test"
+  },
   "devDependencies": {
     "npm-run-all": "^4.1.2"
   }

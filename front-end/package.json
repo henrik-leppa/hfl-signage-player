@@ -14,11 +14,11 @@
   },
   "homepage": "https://github.com/henrik-leppa/hfl-signage-player/front-end#readme",
   "scripts": {
-    "start": "npm run ensure-env && react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "ensure-env": "shx cp -n .env.default .env"
+    "ensure-env": "shx cp -n .env.default .env",
+    "start": "npm run ensure-env && react-scripts start",
+    "test": "react-scripts test --env=jsdom"
   },
   "dependencies": {
     "pouchdb": "^6.4.3",

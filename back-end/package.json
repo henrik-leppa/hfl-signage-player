@@ -15,9 +15,9 @@
   "homepage": "https://github.com/henrik-leppa/hfl-signage-player/back-end#readme",
   "main": "app.js",
   "scripts": {
+    "ensure-env": "shx cp -n .env.default .env",
     "start": "npm run ensure-env && node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "ensure-env": "shx cp -n .env.default .env"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "cors": "^2.8.4",
