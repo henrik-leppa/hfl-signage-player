@@ -17,9 +17,9 @@ This app was created with [Create React App](./create-react-app.md).
 Getting Started / Installation
 ------------------------------
 
-1. Open a command-line in the root of the subproject.
-2. Run `npm install` or `yarn`.
-3. Run `npm start` or `yarn start`
+1. Open a command-line in the root of this subproject's directory.
+2. Run `npm install`.
+3. Run `npm start`.
    - The command-line will automatically open the app in your default browser
      and indicate where it can be opened in localhost and on your network.
    - To change back-end URL from `http://localhost:4000/`, change the

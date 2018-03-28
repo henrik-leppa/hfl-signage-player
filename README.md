@@ -45,8 +45,8 @@ Windows, and macOS.
        or
      - Chromium / Google Chrome (latest)
 2. Open a command-line in the root of the project directory.
-3. Run `npm install` or `yarn`.
-4. Run `npm start` or `yarn start`.
+3. Run `npm install`.
+4. Run `npm start`.
    - The command-line will automatically open Front-end and Management UI in
      your default browser and indicate where they can be opened in localhost and
      on your network.

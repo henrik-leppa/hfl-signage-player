@@ -9,9 +9,9 @@ Hosts a [PouchDB] database and an upload directory.
 Getting Started / Installation
 ------------------------------
 
-1. Open a command-line in the root of the subproject.
-2. Run `npm install` or `yarn`.
-3. Run `npm start` or `yarn start`
+1. Open a command-line in the root of this subproject's directory.
+2. Run `npm install`.
+3. Run `npm start`.
    - The command-line will show which port the server is using in localhost.
    - To change the port, change the `PORT` variable in the `.env` file that
      `npm start` creates, and restart this subproject.
