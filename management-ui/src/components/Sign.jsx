@@ -27,10 +27,11 @@ const styles = theme => ({
 
 class Sign extends Component {
 
-  handleChange = prop => event => {
+  handleChange = event => {
+    const { name, value } = event.currentTarget;
     this.props.onChange({
       id: this.props.id,
-      [prop]: event.target.value
+      [name]: value,
     });
   };
 
@@ -88,9 +89,10 @@ class Sign extends Component {
         <ExpansionPanelDetails className={classes.expansionPanelDetails}>
           <TextField
             fullWidth
+            name="title"
             label="Title"
             value={title}
-            onChange={this.handleChange('title')}
+            onChange={this.handleChange}
           />
           <Toolbar className={classes.toolbar}>
             <Button onClick={this.handleFullPageAutoplayingVideoClick}>
@@ -109,11 +111,12 @@ class Sign extends Component {
           <TextField
             InputProps={{ className: classes.htmlTextField }}
             fullWidth
+            name="html"
             label="HTML"
             multiline
             rows={20}
             value={html}
-            onChange={this.handleChange('html')}
+            onChange={this.handleChange}
           />
           <Button
             variant="raised"

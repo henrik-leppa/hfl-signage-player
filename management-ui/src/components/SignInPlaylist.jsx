@@ -4,8 +4,9 @@ import { ArrowDownward, ArrowUpward, Delete } from 'material-ui-icons';
 
 class SignInPlaylist extends Component {
 
-  handleSignMoveClick = direction => event => {
+  handleSignMoveClick = event => {
     const { playlistId, arrayPosition } = this.props;
+    const direction = event.currentTarget.name;
     if (direction === 'up') {
       this.props.onSignMoveClick({
         playlistId,
@@ -34,16 +35,18 @@ class SignInPlaylist extends Component {
       <li>
         <Toolbar>
           <IconButton
+            name="up"
             title="Move up"
             disabled={arrayPosition === 0}
-            onClick={this.handleSignMoveClick('up')}
+            onClick={this.handleSignMoveClick}
           >
             <ArrowUpward />
           </IconButton>
           <IconButton
+            name="down"
             title="Move down"
             disabled={arrayPosition === arrayLength - 1}
-            onClick={this.handleSignMoveClick('down')}
+            onClick={this.handleSignMoveClick}
           >
             <ArrowDownward />
           </IconButton>
