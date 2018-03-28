@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import PlaylistList from '../containers/PlaylistList';
 
 class Playlists extends Component {
 
   render() {
-    const linkComponents = this.props.playlists.map(playlist => (
-      <li key={playlist.id}>
-        <Link to={'/' + playlist.id}>
-          {playlist.title}
-        </Link>
-      </li>
-    ));
-
     return (
       <main>
         <header>
@@ -36,9 +28,7 @@ class Playlists extends Component {
           <h2>
             Playlists
           </h2>
-          <ul>
-            {linkComponents}
-          </ul>
+          <PlaylistList />
         </section>
       </main>
     );

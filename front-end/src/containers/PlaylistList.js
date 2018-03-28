@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
-import { default as PlaylistsComponent } from '../components/Playlists';
+import { default as PlaylistListComponent } from '../components/PlaylistList';
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    playlists: state.playlists
+    playlists: state.playlists,
   };
 };
 
@@ -11,9 +11,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {};
 };
 
-const Playlists = connect(
+const PlaylistList = connect(
   mapStateToProps,
   mapDispatchToProps,
-)(PlaylistsComponent);
+)(PlaylistListComponent);
 
-export default Playlists;
+export default PlaylistList;

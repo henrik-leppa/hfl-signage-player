@@ -23,10 +23,11 @@ const styles = theme => ({
 
 class Playlist extends Component {
 
-  handleChange = prop => event => {
+  handleChange = event => {
+    const { name, value } = event.currentTarget;
     this.props.onChange({
       id: this.props.id,
-      [prop]: event.target.value,
+      [name]: value,
     });
   };
 
@@ -54,9 +55,10 @@ class Playlist extends Component {
         <ExpansionPanelDetails className={classes.expansionPanelDetails}>
           <TextField
             fullWidth
+            name="title"
             label="Title"
             value={title}
-            onChange={this.handleChange('title')}
+            onChange={this.handleChange}
           />
           <ol>
             {signIds.map((signId, arrayPosition, array) => (
