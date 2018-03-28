@@ -44,10 +44,16 @@ Windows, and macOS.
      - Mozilla Firefox (latest) \
        or
      - Chromium / Google Chrome (latest)
-2. Start [Back-end](./back-end/).
-3. Start [Management UI](./management-ui/), and create some signs, playlists and
-   (optionally) upload some files.
-4. Start [Front-end](./front-end/) and open a playlist.
+2. Open a command-line in the root of the project directory.
+3. Run `npm install`.
+4. Run `npm start`.
+   - The command-line will automatically open Front-end and Management UI in
+     your default browser and indicate where they can be opened in localhost and
+     on your network.
+   - To change the ports of the subprojects, see their documentations.
+5. Go to Management UI, and create some signs, playlists, and (optionally)
+   upload some files.
+6. Go to Front-end, and open a playlist.
 
 
 Workflow
