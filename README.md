@@ -74,7 +74,7 @@ Windows, and macOS.
 
 1. Install:
    - Run-time environment:
-     - Node.js 8.9.4
+     - Node.js 8.x
        - (Recommended) Install using [Node Version Manager (NVM)] (or its
          [Windows-equivalents]).
    - Web browser:
@@ -92,11 +92,18 @@ Windows, and macOS.
    upload some files.
 6. Go to Front-end, and open a playlist.
 
+**Note:** You can also run the subprojects individually by running the commands
+in the roots of their directories.
+
 
 Workflow
 --------
 
 This project uses [git-flow] with default settings.
+
+
+[Changelog]
+-----------
 
 
 Copyright
@@ -110,4 +117,4 @@ All rights reserved.
 [Node Version Manager (NVM)]: https://github.com/creationix/nvm
 [Windows-equivalents]: https://github.com/creationix/nvm#important-notes
 [git-flow]: https://github.com/nvie/gitflow
-[Node.js installation]: https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
+[Changelog]: ./CHANGELOG.md
