@@ -23,6 +23,8 @@ Versioning].
 - Instructions on how to set Front-end to full screen mode with "F11" key
 - Recommendation to use Node Version Manager (NVM)
 - Support for Microsoft Windows
+- Centralization of NPM scripts
+- Screenshots
 
 
 [0.1.0] – 2018-02-27
