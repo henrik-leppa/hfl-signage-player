@@ -3,6 +3,8 @@ HFL Signage Player: Back-end
 
 [Express.js] back-end for [HFL Signage Player]
 
+(Screenshots: Terminal, Front page, Uploads)
+
 Hosts a [PouchDB] database and an upload directory.
 
 

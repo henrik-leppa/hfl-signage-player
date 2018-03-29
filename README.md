@@ -3,6 +3,9 @@ HFL Signage Player
 
 Digital signage player written by Henrik Franciscus Leppä
 
+(Screenshots: Management UI: Signs, Management UI: Playlists, Front-end:
+Playlist)
+
 
 Main Technologies
 -----------------

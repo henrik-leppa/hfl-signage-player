@@ -3,6 +3,8 @@ HFL Signage Player: Management UI
 
 Management UI for [HFL Signage Player]
 
+(Screenshots: Front page, Signs, Playlists)
+
 With this web app you can create HTML signs that show products and such, upload
 files (like images and videos) that you can attach to those signs, and create
 playlists – collections of signs that are shown in sequence.

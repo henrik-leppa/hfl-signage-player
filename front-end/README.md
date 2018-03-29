@@ -3,6 +3,8 @@ HFL Signage Player: Front-end
 
 Front-end for [HFL Signage Player]
 
+(Screenshots: Playlists, Playlist)
+
 This web app plays the playlists that have been created in [Management
 UI](./management-ui/).
 
