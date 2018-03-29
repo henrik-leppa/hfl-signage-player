@@ -92,6 +92,9 @@ Windows, and macOS.
    upload some files.
 6. Go to Front-end, and open a playlist.
 
+**Note:** You can also run the subprojects individually by running the commands
+in the roots of their directories.
+
 
 Workflow
 --------
