@@ -3,6 +3,33 @@ HFL Signage Player: Front-end
 
 Front-end for [HFL Signage Player]
 
+<table>
+  <tr>
+    <th scope="col">Home</th>
+    <th scope="col">Playlist</th>
+  </tr>
+  <tr>
+    <td>
+      <a href="./screenshots/home.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./screenshots/home.png"
+        >
+      </a>
+    </td>
+    <td>
+      <a href="./screenshots/playlist.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./screenshots/playlist.png"
+        >
+      </a>
+    </td>
+  </tr>
+</table>
+
 This web app plays the playlists that have been created in [Management
 UI](./management-ui/).
 

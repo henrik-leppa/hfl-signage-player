@@ -3,6 +3,43 @@ HFL Signage Player: Back-end
 
 [Express.js] back-end for [HFL Signage Player]
 
+<table>
+  <tr>
+    <th scope="col">Terminal</th>
+    <th scope="col">Home</th>
+    <th scope="col">Uploads</th>
+  </tr>
+  <tr>
+    <td>
+      <a href="./screenshots/terminal.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./screenshots/terminal.png"
+        >
+      </a>
+    </td>
+    <td>
+      <a href="./screenshots/home.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./screenshots/home.png"
+        >
+      </a>
+    </td>
+    <td>
+      <a href="./screenshots/uploads.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./screenshots/uploads.png"
+        >
+      </a>
+    </td>
+  </tr>
+</table>
+
 Hosts a [PouchDB] database and an upload directory.
 
 

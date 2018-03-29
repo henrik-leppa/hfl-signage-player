@@ -3,6 +3,43 @@ HFL Signage Player: Management UI
 
 Management UI for [HFL Signage Player]
 
+<table>
+  <tr>
+    <th scope="col">Home</th>
+    <th scope="col">Signs</th>
+    <th scope="col">Playlists</th>
+  </tr>
+  <tr>
+    <td>
+      <a href="./screenshots/home.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./screenshots/home.png"
+        >
+      </a>
+    </td>
+    <td>
+      <a href="./screenshots/signs.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./screenshots/signs.png"
+        >
+      </a>
+    </td>
+    <td>
+      <a href="./screenshots/playlists.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./screenshots/playlists.png"
+        >
+      </a>
+    </td>
+  </tr>
+</table>
+
 With this web app you can create HTML signs that show products and such, upload
 files (like images and videos) that you can attach to those signs, and create
 playlists – collections of signs that are shown in sequence.
