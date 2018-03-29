@@ -10,15 +10,21 @@ Versioning].
 [Unreleased]
 ------------
 
+[(See this file in `develop` branch.)][Development Changelog]
+
+
+[0.2.0] – 2018-03-29
+--------------------
+
 ### Added
 
-- Authentication
-- Connection Lost Indicator
-- Listing Files In Front-end
-
-### Fixed
-
-- No Upload Success Indicator
+- When the browser cannot determine video length in Front-end, this fact is
+  logged into the console
+- Instructions on how to set Front-end to full screen mode with "F11" key
+- Recommendation to use Node Version Manager (NVM)
+- Support for Microsoft Windows
+- Centralization of NPM scripts
+- Screenshots
 
 
 [0.1.0] – 2018-02-27
@@ -35,5 +41,11 @@ Versioning].
 
 [Keep a Changelog]: http://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: http://semver.org/spec/v2.0.0.html
-[Unreleased]: https://github.com/henrik-leppa/hfl-signage-player/compare/732fad4eb5b81bb6947c52211bbdda8ce201ee8a...develop
-[0.1.0]: https://github.com/henrik-leppa/hfl-signage-player/compare/732fad4eb5b81bb6947c52211bbdda8ce201ee8a...0.1.0
+[Development Changelog]:
+  https://github.com/henrik-leppa/hfl-signage-player/blob/develop/CHANGELOG.md
+[Unreleased]:
+  https://github.com/henrik-leppa/hfl-signage-player/compare/0.2.0...develop
+[0.2.0]:
+  https://github.com/henrik-leppa/hfl-signage-player/compare/0.1.0...0.2.0
+[0.1.0]:
+  https://github.com/henrik-leppa/hfl-signage-player/compare/732fad4eb5b81bb6947c52211bbdda8ce201ee8a...0.1.0

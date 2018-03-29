@@ -3,7 +3,7 @@ import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import PageNotFound from './PageNotFound';
 import Playlist from '../containers/Playlist';
-import Playlists from '../containers/Playlists';
+import Playlists from '../components/Playlists';
 
 class App extends Component {
   render() {

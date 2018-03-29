@@ -3,15 +3,52 @@ HFL Signage Player: Back-end
 
 [Express.js] back-end for [HFL Signage Player]
 
+<table>
+  <tr>
+    <th scope="col">Terminal</th>
+    <th scope="col">Home</th>
+    <th scope="col">Uploads</th>
+  </tr>
+  <tr>
+    <td>
+      <a href="./screenshots/terminal.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./screenshots/terminal.png"
+        >
+      </a>
+    </td>
+    <td>
+      <a href="./screenshots/home.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./screenshots/home.png"
+        >
+      </a>
+    </td>
+    <td>
+      <a href="./screenshots/uploads.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./screenshots/uploads.png"
+        >
+      </a>
+    </td>
+  </tr>
+</table>
+
 Hosts a [PouchDB] database and an upload directory.
 
 
 Getting Started / Installation
 ------------------------------
 
-1. Open a command-line in the root of the subproject.
-2. Run `npm install` or `yarn`.
-3. Run `npm start` or `yarn start`
+1. Open a command-line in the root of this subproject's directory.
+2. Run `npm install`.
+3. Run `npm start`.
    - The command-line will show which port the server is using in localhost.
    - To change the port, change the `PORT` variable in the `.env` file that
      `npm start` creates, and restart this subproject.

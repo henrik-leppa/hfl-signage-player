@@ -15,58 +15,38 @@ class Playlist extends Component {
     };
   };
 
-  collectPlaylistSigns = (nextProps) => {
-    if (!this.state.playlistSigns) {
-      const props = nextProps || this.props;
-
-      const { allSigns, allPlaylists, match } = props;
-
-      const playlist = allPlaylists.find(
-        playlist => playlist.id === match.params.id
-      );
-
-      let playlistSigns;
-      if (playlist && 0 < playlist.signIds.length && 1 < allSigns.length) {
-        playlistSigns = playlist.signIds.map(
-          signId => allSigns.find(sign => sign.id === signId)
-        );
-      }
-
-      if (playlistSigns) {
-        this.setState({
-          ...this.state,
-          playlistSigns,
-        });
-        // Defer `setSignTimeout` so that `ref` functions can fire.
-        setTimeout(this.setSignTimeout);
-      }
-    }
-  };
-
   transition = () => {
     if (0 < this.state.currentSignOpacityAndVolumePercent) {
+      const {
+        transitionframes, transitionDurationMilliseconds
+      } = this.constructor;
       // Fade the current sign a little and wait a while
       this.setState({
-        ...this.state,
         currentSignOpacityAndVolumePercent: (
-          this.state.currentSignOpacityAndVolumePercent
-          - 100 / Playlist.transitionframes
+          this.state.currentSignOpacityAndVolumePercent - 100 / transitionframes
         ),
       });
       this.setVolumes();
       setTimeout(this.transition, (
-        Playlist.transitionDurationMilliseconds / Playlist.transitionframes
+        transitionDurationMilliseconds / transitionframes
       ));
     }
     else {
       // Old sign is invisible, remove it and wait a long time
       this.setState({
-        ...this.state,
         currentPosition: this.nextPosition,
         currentSignOpacityAndVolumePercent: 100,
       });
       this.setVolumes();
       this.setSignTimeout();
+    }
+  }
+
+  start = props => {
+    if (props.signs && !this.animationStarted) {
+      // Defer `setSignTimeout` so that `ref` functions can fire.
+      setTimeout(this.setSignTimeout);
+      this.animationStarted = true;
     }
   }
 
@@ -76,61 +56,66 @@ class Playlist extends Component {
       if (Number.isFinite(duration)) {
         setTimeout(
           this.transition,
-          duration * 1000 - Playlist.signDurationMilliseconds,
+          duration * 1000 - this.constructor.signDurationMilliseconds,
         );
       }
       else {
+        console.log(
+          'Videos\'s length could not be determined.' + '\n'
+          + 'It will play to its end, but it will not fade out.' + '\n\n'
+          + 'Video: ', this.currentVideoElement
+        );
         this.currentVideoElement.addEventListener('ended', this.transition);
       }
     }
     else {
-      setTimeout(this.transition, Playlist.signDurationMilliseconds);
+      setTimeout(this.transition, this.constructor.signDurationMilliseconds);
     }
   }
 
   setVolumes = () => {
-      if (this.currentVideoElement) {
-        this.currentVideoElement.volume = (
-          this.state.currentSignOpacityAndVolumePercent / 100
-        )
-      }
-      if (this.nextVideoElement) {
-        this.nextVideoElement.volume = (
-          this.nextSignOpacityAndVolumePercent / 100
-        )
-      }
+    if (this.currentVideoElement) {
+      this.currentVideoElement.volume = (
+        this.state.currentSignOpacityAndVolumePercent / 100
+      )
+    }
+    if (this.nextVideoElement) {
+      this.nextVideoElement.volume = (
+        this.nextSignOpacityAndVolumePercent / 100
+      )
+    }
   }
 
-  currentSignElementAloneRef = (currentSignElement) => {
+  currentSignElementAloneRef = currentSignElement => {
     if (currentSignElement) {
       this.currentVideoElement = currentSignElement.querySelector('video');
     }
     this.nextSignElement = null;
   }
 
-  currentSignElementWithNextRef = (currentSignElement) => {
+  currentSignElementWithNextRef = currentSignElement => {
     if (currentSignElement) {
       this.currentVideoElement = currentSignElement.querySelector('video');
     }
   }
 
-  nextSignElementRef = (nextSignElement) => {
+  nextSignElementRef = nextSignElement => {
     if (nextSignElement) {
       this.nextVideoElement = nextSignElement.querySelector('video');
     }
   }
 
   componentDidMount() {
-    this.collectPlaylistSigns();
+    this.start(this.props);
   };
 
   componentWillReceiveProps(nextProps) {
-    this.collectPlaylistSigns(nextProps);
+    this.start(nextProps);
   };
 
   get nextPosition() {
     let next = this.state.currentPosition + 1;
-    if (next === this.state.playlistSigns.length) {
+    if (next === this.props.signs.length) {
       next = 0;
     }
     return next;
@@ -141,9 +126,10 @@ class Playlist extends Component {
   };
 
   render() {
-    const { playlistSigns, currentPosition } = this.state;
+    const { signs } = this.props;
+    const { currentPosition } = this.state;
 
-    if (playlistSigns) {
+    if (signs) {
       if (this.state.currentSignOpacityAndVolumePercent === 100) {
         return (
           <div className="playlist">
@@ -151,7 +137,7 @@ class Playlist extends Component {
               className="sign"
               ref={this.currentSignElementAloneRef}
               dangerouslySetInnerHTML={{
-                __html: playlistSigns[currentPosition].html
+                __html: signs[currentPosition].html
               }}
             />
           </div>
@@ -167,7 +153,7 @@ class Playlist extends Component {
                 opacity: this.state.currentSignOpacityAndVolumePercent / 100,
               }}
               dangerouslySetInnerHTML={{
-                __html: playlistSigns[currentPosition].html
+                __html: signs[currentPosition].html
               }}
             />
             <div
@@ -177,7 +163,7 @@ class Playlist extends Component {
                 opacity: this.nextSignOpacityAndVolumePercent / 100,
               }}
               dangerouslySetInnerHTML={{
-                __html: playlistSigns[this.nextPosition].html
+                __html: signs[this.nextPosition].html
               }}
             />
           </div>

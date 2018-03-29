@@ -3,7 +3,47 @@ HFL Signage Player
 
 Digital signage player written by Henrik Franciscus Leppä
 
-Main technologies:
+<table>
+  <tr>
+    <th scope="col">Management UI: Signs</th>
+    <th scope="col">Management UI: Playlists</th>
+    <th scope="col">Front-end: Playlist</th>
+  </tr>
+  <tr>
+    <td>
+      <a href="./management-ui/screenshots/signs.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./management-ui/screenshots/signs.png"
+        >
+      </a>
+    </td>
+    <td>
+      <a href="./management-ui/screenshots/playlists.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./management-ui/screenshots/playlists.png"
+        >
+      </a>
+    </td>
+    <td>
+      <a href="./front-end/screenshots/playlist.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./front-end/screenshots/playlist.png"
+        >
+      </a>
+    </td>
+  </tr>
+</table>
+
+
+Main Technologies
+-----------------
+
 - [Express.js 4](https://expressjs.com/)
 - [Material-UI v1](https://material-ui-next.com/)
 - [Node.js](https://nodejs.org/)
@@ -11,6 +51,10 @@ Main technologies:
 - [React.js](https://reactjs.org/)
 - [React Router 4](https://github.com/ReactTraining/react-router)
 - [Redux](https://redux.js.org/)
+
+
+Subprojects
+-----------
 
 This project is made up of 3 subprojects:
 - [Back-end](./back-end/)
@@ -21,28 +65,45 @@ This project is made up of 3 subprojects:
 Getting Started / Installation
 ------------------------------
 
-1. Setup the environment.
+This project is cross-platform software, and as such it should be possible to
+run it on any operating system that supports the software listed in the
+"Install" step, including, but not limited to: GNU/Linux, BSD, Microsoft
+Windows, and macOS.
 
-   This project has only been tested to work on the following environment:
-   - Operating system: Ubuntu 16.04.3 LTS Desktop AMD64
-   - Run-time environment: Node.js 8.9.4
-     - I found the ["Installing Node.js via package manager"][Node.js
-       installation] instructions to be the easiest way to install it.
-       - To use this method however, you first need to install `curl` with:
-         ```
-         sudo apt-get install curl
-         ```
-   - Web browser: Mozilla Firefox (latest)
-2. Start [Back-end](./back-end/).
-3. Start [Management UI](./management-ui/), and create some signs, playlists and
-   (optionally) upload some files.
-4. Start [Front-end](./front-end/) and open a playlist.
+### Steps
+
+1. Install:
+   - Run-time environment:
+     - Node.js 8.x
+       - (Recommended) Install using [Node Version Manager (NVM)] (or its
+         [Windows-equivalents]).
+   - Web browser:
+     - Mozilla Firefox (latest) \
+       or
+     - Chromium / Google Chrome (latest)
+2. Open a command-line in the root of the project directory.
+3. Run `npm install`.
+4. Run `npm start`.
+   - The command-line will automatically open Front-end and Management UI in
+     your default browser and indicate where they can be opened in localhost and
+     on your network.
+   - To change the ports of the subprojects, see their documentations.
+5. Go to Management UI, and create some signs, playlists, and (optionally)
+   upload some files.
+6. Go to Front-end, and open a playlist.
+
+**Note:** You can also run the subprojects individually by running the commands
+in the roots of their directories.
 
 
 Workflow
 --------
 
 This project uses [git-flow] with default settings.
+
+
+[Changelog]
+-----------
 
 
 Copyright
@@ -53,5 +114,7 @@ Copyright © 2018 Henrik Franciscus Leppä
 All rights reserved.
 
 
+[Node Version Manager (NVM)]: https://github.com/creationix/nvm
+[Windows-equivalents]: https://github.com/creationix/nvm#important-notes
 [git-flow]: https://github.com/nvie/gitflow
-[Node.js installation]: https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
+[Changelog]: ./CHANGELOG.md
