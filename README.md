@@ -3,8 +3,42 @@ HFL Signage Player
 
 Digital signage player written by Henrik Franciscus Leppä
 
-(Screenshots: Management UI: Signs, Management UI: Playlists, Front-end:
-Playlist)
+<table>
+  <tr>
+    <th scope="col">Management UI: Signs</th>
+    <th scope="col">Management UI: Playlists</th>
+    <th scope="col">Front-end: Playlist</th>
+  </tr>
+  <tr>
+    <td>
+      <a href="./management-ui/screenshots/signs.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./management-ui/screenshots/signs.png"
+        >
+      </a>
+    </td>
+    <td>
+      <a href="./management-ui/screenshots/playlists.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./management-ui/screenshots/playlists.png"
+        >
+      </a>
+    </td>
+    <td>
+      <a href="./front-end/screenshots/playlist.png">
+        <img
+          alt="Screenshot"
+          style="max-width: 100%"
+          src="./front-end/screenshots/playlist.png"
+        >
+      </a>
+    </td>
+  </tr>
+</table>
 
 
 Main Technologies
