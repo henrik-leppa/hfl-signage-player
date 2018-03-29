@@ -99,6 +99,10 @@ Workflow
 This project uses [git-flow] with default settings.
 
 
+[Changelog]
+-----------
+
+
 Copyright
 ---------
 
@@ -110,4 +114,5 @@ All rights reserved.
 [Node Version Manager (NVM)]: https://github.com/creationix/nvm
 [Windows-equivalents]: https://github.com/creationix/nvm#important-notes
 [git-flow]: https://github.com/nvie/gitflow
+[Changelog]: ./CHANGELOG.md
 [Node.js installation]: https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
