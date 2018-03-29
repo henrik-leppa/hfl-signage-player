@@ -74,7 +74,7 @@ Windows, and macOS.
 
 1. Install:
    - Run-time environment:
-     - Node.js 8.9.4
+     - Node.js 8.x
        - (Recommended) Install using [Node Version Manager (NVM)] (or its
          [Windows-equivalents]).
    - Web browser:
