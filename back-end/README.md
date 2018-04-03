@@ -5,9 +5,9 @@ HFL Signage Player: Back-end
 
 <table>
   <tr>
-    <th scope="col">Terminal</th>
-    <th scope="col">Home</th>
-    <th scope="col">Uploads</th>
+    <th scope="col">Command-line</th>
+    <th scope="col">Front page</th>
+    <th scope="col">Browsing uploads</th>
   </tr>
   <tr>
     <td>

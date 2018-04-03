@@ -5,9 +5,9 @@ Management UI for [HFL Signage Player]
 
 <table>
   <tr>
-    <th scope="col">Home</th>
-    <th scope="col">Signs</th>
-    <th scope="col">Playlists</th>
+    <th scope="col">Front page</th>
+    <th scope="col">Creating signs</th>
+    <th scope="col">Adding signs to a playlist</th>
   </tr>
   <tr>
     <td>
