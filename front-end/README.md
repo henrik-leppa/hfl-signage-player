@@ -5,8 +5,8 @@ Front-end for [HFL Signage Player]
 
 <table>
   <tr>
-    <th scope="col">Home</th>
-    <th scope="col">Playlist</th>
+    <th scope="col">Choosing a playlist</th>
+    <th scope="col">Playing a playlist</th>
   </tr>
   <tr>
     <td>
