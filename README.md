@@ -5,9 +5,9 @@ Digital signage player written by Henrik Franciscus Leppä
 
 <table>
   <tr>
-    <th scope="col">Management UI: Signs</th>
-    <th scope="col">Management UI: Playlists</th>
-    <th scope="col">Front-end: Playlist</th>
+    <th scope="col">Creating signs</th>
+    <th scope="col">Adding signs to a playlist</th>
+    <th scope="col">Playing a playlist</th>
   </tr>
   <tr>
     <td>
@@ -39,6 +39,20 @@ Digital signage player written by Henrik Franciscus Leppä
     </td>
   </tr>
 </table>
+
+
+Main Features
+-------------
+
+- Creating digital signage using HTML.
+- Uploading images and videos to include in the HTML.
+- Each static sign stays visible for 7 seconds.
+- Each sign with a video stays visible for the duration of the video.
+- When a playlist moves to the next sign:
+  - ...signs fade in and fade out visually, and
+  - ...sounds of videos cross-fade.
+- All work is autosaved, and no work is lost, even when offline.
+- Cross-platform.
 
 
 Main Technologies

@@ -12,6 +12,15 @@ Versioning].
 
 [(See this file in `develop` branch.)][Development Changelog]
 
+### Added
+
+- Main feature list
+
+### Changed
+
+- Screenshot captions to describe what is happening, as opposed to where they
+  are from
+
 
 [0.2.0] – 2018-03-29
 --------------------
