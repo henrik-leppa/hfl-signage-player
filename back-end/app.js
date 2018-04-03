@@ -16,7 +16,7 @@ app.use('/' + databasePath, expressPouchDB(PouchDB));
 
 app.get('/', function(req, res){
   res.send(
-    '<h1>HFL Signage Player: Back-end 0.2.0</h1>'
+    '<h1>HFL Signage Player: Back-end 0.2.1</h1>'
     + '<p>'
     + '  <small>'
     + '    Copyright © 2018 Henrik Franciscus Leppä<br>'
