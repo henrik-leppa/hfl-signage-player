@@ -8,7 +8,7 @@ class Playlists extends Component {
       <main>
         <header>
           <h1>
-            HFL Signage Player: Front-end 0.2.0
+            HFL Signage Player: Front-end 0.2.1
           </h1>
           <p>
             <small>

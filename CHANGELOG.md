@@ -12,6 +12,10 @@ Versioning].
 
 [(See this file in `develop` branch.)][Development Changelog]
 
+
+[0.2.1] – 2018-04-03
+--------------------
+
 ### Added
 
 - Main feature list
@@ -53,7 +57,9 @@ Versioning].
 [Development Changelog]:
   https://github.com/henrik-leppa/hfl-signage-player/blob/develop/CHANGELOG.md
 [Unreleased]:
-  https://github.com/henrik-leppa/hfl-signage-player/compare/0.2.0...develop
+  https://github.com/henrik-leppa/hfl-signage-player/compare/0.2.1...develop
+[0.2.1]:
+  https://github.com/henrik-leppa/hfl-signage-player/compare/0.2.0...0.2.1
 [0.2.0]:
   https://github.com/henrik-leppa/hfl-signage-player/compare/0.1.0...0.2.0
 [0.1.0]:
