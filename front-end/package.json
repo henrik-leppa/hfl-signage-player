@@ -20,6 +20,10 @@
     "start": "npm run ensure-env && react-scripts start",
     "test": "react-scripts test --env=jsdom"
   },
+  "engines": {
+    "node": "^8.11.3",
+    "npm": "^5.6.0"
+  },
   "dependencies": {
     "pouchdb": "^6.4.3",
     "react": "^16.2.0",

@@ -12,6 +12,10 @@ Versioning].
 
 [(See this file in `develop` branch.)][Development Changelog]
 
+### Added
+
+- Node.js & npm versions to `package.json` files
+
 
 [0.2.1] – 2018-04-03
 --------------------
