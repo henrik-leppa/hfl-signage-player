@@ -66,13 +66,17 @@ Main Features
 Main Technologies
 -----------------
 
-- [Express.js 4](https://expressjs.com/)
-- [Material-UI v1](https://material-ui-next.com/)
-- [Node.js](https://nodejs.org/)
-- [PouchDB](https://pouchdb.com/)
-- [React.js](https://reactjs.org/)
-- [React Router 4](https://github.com/ReactTraining/react-router)
-- [Redux](https://redux.js.org/)
+- [Create React App (CRA)], which includes:
+  - [Babel.js]
+  - [ESLint]
+  - [Express.js 4]
+  - [Node.js]
+  - [React.js]
+  - [Webpack]
+- [Material-UI]
+- [PouchDB]
+- [React Router 4]
+- [Redux]
 
 
 Subprojects
@@ -124,8 +128,19 @@ Workflow
 This project uses [git-flow] with default settings.
 
 
+[Babel.js]: https://babeljs.io/
 [Changelog]: ./CHANGELOG.md
-[MIT License]: ./LICENSE.md
-[Node Version Manager (NVM)]: https://github.com/creationix/nvm
-[Windows-equivalents]: https://github.com/creationix/nvm#important-notes
+[Create React App (CRA)]: https://github.com/facebook/create-react-app
+[ESLint]: https://eslint.org/
+[Express.js 4]: https://expressjs.com/
 [git-flow]: https://github.com/nvie/gitflow
+[MIT License]: ./LICENSE.md
+[Material-UI]: https://material-ui.com/
+[Node Version Manager (NVM)]: https://github.com/creationix/nvm
+[Node.js]: https://nodejs.org/
+[PouchDB]: https://pouchdb.com/
+[React Router 4]: https://github.com/ReactTraining/react-router
+[React.js]: https://reactjs.org/
+[Redux]: https://redux.js.org/
+[Webpack]: https://webpack.js.org/
+[Windows-equivalents]: https://github.com/creationix/nvm#important-notes
