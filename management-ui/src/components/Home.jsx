@@ -15,7 +15,7 @@ class Home extends Component {
       <main className={classes.mainContent}>
         <header>
           <h1>
-            HFL Signage Player: Management UI 0.2.1
+            HFL Signage Player: Management UI 0.3.0
           </h1>
           <p>
             <small>

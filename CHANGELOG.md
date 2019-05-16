@@ -12,6 +12,10 @@ Versioning].
 
 [(See this file in `develop` branch.)][Development Changelog]
 
+
+[0.3.0] – 2019-05-16
+--------------------
+
 ### Added
 
 - Node.js & npm versions to `package.json` files
@@ -66,7 +70,9 @@ Versioning].
 [Development Changelog]:
   https://github.com/henrik-leppa/hfl-signage-player/blob/develop/CHANGELOG.md
 [Unreleased]:
-  https://github.com/henrik-leppa/hfl-signage-player/compare/0.2.1...develop
+  https://github.com/henrik-leppa/hfl-signage-player/compare/0.3.0...develop
+[0.3.0]:
+  https://github.com/henrik-leppa/hfl-signage-player/compare/0.2.1...0.3.0
 [0.2.1]:
   https://github.com/henrik-leppa/hfl-signage-player/compare/0.2.0...0.2.1
 [0.2.0]:
