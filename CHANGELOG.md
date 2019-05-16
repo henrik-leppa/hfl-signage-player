@@ -16,6 +16,10 @@ Versioning].
 
 - Node.js & npm versions to `package.json` files
 
+### Security
+
+- Rebuild code with Create React App 3.0.1, and update all dependencies
+
 
 [0.2.1] – 2018-04-03
 --------------------

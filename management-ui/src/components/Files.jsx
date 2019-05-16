@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Button, withStyles } from 'material-ui';
-import { OpenInNew } from 'material-ui-icons';
+import { Button, withStyles } from '@material-ui/core';
+import { OpenInNew } from '@material-ui/icons';
 
 const styles = theme => ({
   mainContent: {
@@ -20,9 +20,13 @@ class Files extends Component {
           Files
         </h1>
         <p>
-          <a href={uploadDirectory} target="_blank" rel="external">
+          <a
+            href={uploadDirectory}
+            target="_blank"
+            rel="external noopener noreferrer"
+          >
             <abbr title="Opens in a new tab/window">
-              <OpenInNew fontSize />
+              <OpenInNew fontSize="inherit" />
             </abbr>
             Browser files in Back-end (check after send).
           </a>
@@ -48,7 +52,7 @@ class Files extends Component {
               <input type="file" name="file" />
             </p>
             <p>
-              <Button type="submit" variant="raised" color="primary">
+              <Button type="submit" variant="contained" color="primary">
                 Send
               </Button>
             </p>

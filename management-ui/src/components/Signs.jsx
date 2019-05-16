@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'material-ui';
-import { withStyles } from 'material-ui/styles';
+import { Button, withStyles } from '@material-ui/core';
 import Sign from '../containers/Sign';
 
 const styles = theme => ({
@@ -44,7 +43,7 @@ class Signs extends Component {
         </p>
         <p className={classes.buttonParagraph}>
           <Button
-            variant="raised"
+            variant="contained"
             color="primary"
             onClick={this.handleNewSignClick}
           >

@@ -1,8 +1,8 @@
-import { createStore } from 'redux'
-import PouchDB from 'pouchdb'
+import { createStore } from 'redux';
+import PouchDB from 'pouchdb';
 import { persistentStore } from 'redux-pouchdb';
 
-import rootReducer from './reducers'
+import rootReducer from './reducers';
 
 const backEndUrl = process.env.REACT_APP_BACK_END_URL;
 
@@ -30,6 +30,6 @@ const configureStore = () => {
   );
 
   return store;
-}
+};
 
 export default configureStore;

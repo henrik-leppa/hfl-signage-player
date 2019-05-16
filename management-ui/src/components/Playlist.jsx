@@ -11,8 +11,8 @@ import {
   Toolbar,
   Typography,
   withStyles,
-} from 'material-ui';
-import { ExpandMore } from 'material-ui-icons';
+} from '@material-ui/core';
+import { ExpandMore } from '@material-ui/icons';
 import SignInPlaylist from '../containers/SignInPlaylist';
 
 const styles = theme => ({
@@ -91,7 +91,7 @@ class Playlist extends Component {
           </Toolbar>
           <Toolbar>
             <Button
-              variant="raised"
+              variant="contained"
               color="secondary"
               onClick={this.handleDeleteClick}
             >
