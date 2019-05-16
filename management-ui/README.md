@@ -48,7 +48,11 @@ playlists – collections of signs that are shown in sequence.
 [Front-end](../front-end/) once you refresh the page in it. Autosaving cannot be
 turned off in this version.
 
-This app was created with [Create React App](./create-react-app.md).
+This app was created with [Create React App](./CREATE-REACT-APP-README.md).
+
+
+[MIT License]
+-------------
 
 
 Getting Started / Installation
@@ -66,12 +70,5 @@ Getting Started / Installation
      `npm start` creates, and restart this subproject.
 
 
-Copyright
----------
-
-Copyright © 2018 Henrik Franciscus Leppä
-
-All rights reserved.
-
-
 [HFL Signage Player]: https://github.com/henrik-leppa/hfl-signage-player
+[MIT License]: ./LICENSE.md

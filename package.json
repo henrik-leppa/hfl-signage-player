@@ -1,10 +1,9 @@
 {
   "name": "hfl-signage-player",
-  "version": "0.2.1",
-  "description": "Digital signage player written by Henrik Franciscus Leppä",
+  "version": "0.3.0",
+  "description": "Digital signage player written by Henrik Franciscus Leppä (HFL)",
   "author": "Henrik Franciscus Leppä",
-  "license": "UNLICENSED",
-  "private": true,
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/henrik-leppa/hfl-signage-player.git"
@@ -30,6 +29,10 @@
     "test:back-end": "cd back-end && npm test",
     "test:front-end": "cd front-end && npm test",
     "test:management-ui": "cd management-ui && npm test"
+  },
+  "engines": {
+    "node": "^8.11.3",
+    "npm": "^5.6.0"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.2"

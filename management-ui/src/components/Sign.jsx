@@ -8,8 +8,8 @@ import {
   Toolbar,
   Typography,
   withStyles,
-} from 'material-ui';
-import { ExpandMore } from 'material-ui-icons';
+} from '@material-ui/core';
+import { ExpandMore } from '@material-ui/icons';
 
 const uploadDirectory = process.env.REACT_APP_BACK_END_URL + 'uploads';
 
@@ -119,7 +119,7 @@ class Sign extends Component {
             onChange={this.handleChange}
           />
           <Button
-            variant="raised"
+            variant="contained"
             color="secondary"
             onClick={this.handleDeleteClick}
           >

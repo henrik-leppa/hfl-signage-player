@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { AppBar as MaterialUiAppBar, Button, Toolbar } from 'material-ui';
-import { PictureInPicture, List, Home, Attachment } from 'material-ui-icons';
+import { AppBar as MaterialUiAppBar, Button, Toolbar } from '@material-ui/core';
+import { PictureInPicture, List, Home, Attachment } from '@material-ui/icons';
 
 import { globalStylesClassnames } from './globalStyles';
 

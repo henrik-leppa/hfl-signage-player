@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Route, Switch } from 'react-router-dom';
-import { Reboot, withStyles } from 'material-ui';
+import { CssBaseline, withStyles } from '@material-ui/core';
 import AppBar from './AppBar';
 import globalStyles from './globalStyles.js';
 import Home from './Home';
@@ -29,7 +29,7 @@ class App extends Component {
     const { classes } = this.props;
     return (
       <div className={`${classes.app} ${classes.appWithAppBar}`}>
-        <Reboot />
+        <CssBaseline />
         <AppBar />
         <div>
           <Switch>

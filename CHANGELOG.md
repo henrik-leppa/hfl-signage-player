@@ -13,6 +13,23 @@ Versioning].
 [(See this file in `develop` branch.)][Development Changelog]
 
 
+[0.3.0] – 2019-05-16
+--------------------
+
+### Added
+
+- Node.js & npm versions to `package.json` files
+- `.gitattributes` file
+
+### Changed
+
+- From unlicensed to MIT License
+
+### Security
+
+- Rebuild code with Create React App 3.0.1, and update all dependencies
+
+
 [0.2.1] – 2018-04-03
 --------------------
 
@@ -57,7 +74,9 @@ Versioning].
 [Development Changelog]:
   https://github.com/henrik-leppa/hfl-signage-player/blob/develop/CHANGELOG.md
 [Unreleased]:
-  https://github.com/henrik-leppa/hfl-signage-player/compare/0.2.1...develop
+  https://github.com/henrik-leppa/hfl-signage-player/compare/0.3.0...develop
+[0.3.0]:
+  https://github.com/henrik-leppa/hfl-signage-player/compare/0.2.1...0.3.0
 [0.2.1]:
   https://github.com/henrik-leppa/hfl-signage-player/compare/0.2.0...0.2.1
 [0.2.0]:

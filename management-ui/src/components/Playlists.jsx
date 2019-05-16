@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, withStyles } from 'material-ui';
+import { Button, withStyles } from '@material-ui/core';
 import Playlist from '../containers/Playlist';
 
 const styles = theme => ({
@@ -31,7 +31,7 @@ class Playlists extends Component {
         </h1>
         <p className={classes.buttonParagraph}>
           <Button
-            variant="raised"
+            variant="contained"
             color="primary"
             onClick={this.handleNewPlaylistClick}
           >

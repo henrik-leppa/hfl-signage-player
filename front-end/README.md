@@ -33,7 +33,11 @@ Front-end for [HFL Signage Player]
 This web app plays the playlists that have been created in [Management
 UI](./management-ui/).
 
-This app was created with [Create React App](./create-react-app.md).
+This app was created with [Create React App](./CREATE-REACT-APP-README.md).
+
+
+[MIT License]
+-------------
 
 
 Getting Started / Installation
@@ -51,12 +55,5 @@ Getting Started / Installation
      `npm start` creates, and restart this subproject.
 
 
-Copyright
----------
-
-Copyright © 2018 Henrik Franciscus Leppä
-
-All rights reserved.
-
-
 [HFL Signage Player]: https://github.com/henrik-leppa/hfl-signage-player
+[MIT License]: ./LICENSE.md
