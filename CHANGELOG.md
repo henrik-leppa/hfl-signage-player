@@ -15,6 +15,7 @@ Versioning].
 ### Added
 
 - Node.js & npm versions to `package.json` files
+- `.gitattributes` file
 
 ### Security
 
