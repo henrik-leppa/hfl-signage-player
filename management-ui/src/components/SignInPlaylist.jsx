@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { IconButton, Toolbar } from 'material-ui';
-import { ArrowDownward, ArrowUpward, Delete } from 'material-ui-icons';
+import { IconButton, Toolbar } from '@material-ui/core';
+import { ArrowDownward, ArrowUpward, Delete } from '@material-ui/icons';
 
 class SignInPlaylist extends Component {
 

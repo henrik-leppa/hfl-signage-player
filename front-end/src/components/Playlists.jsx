@@ -8,12 +8,29 @@ class Playlists extends Component {
       <main>
         <header>
           <h1>
-            HFL Signage Player: Front-end 0.2.1
+            HFL Signage Player: Front-end 0.3.0
           </h1>
           <p>
             <small>
-              Copyright © 2018 Henrik Franciscus Leppä<br />
-              All rights reserved.
+              Copyright © 2018&ndash;2019 Henrik Franciscus Leppä
+            </small>
+          </p>
+          <p>
+            <small>
+              This is free software. You may redistribute copies of it under the
+              terms of the
+              {' '}
+              <a
+                href="https://opensource.org/licenses/MIT"
+                target="_blank"
+                rel="external noopener noreferrer"
+              >
+                <abbr title="Opens in a new tab/window">
+                  ↗
+                </abbr>
+                MIT License
+              </a>
+              . There is NO WARRANTY, to the extent permitted by law.
             </small>
           </p>
         </header>
