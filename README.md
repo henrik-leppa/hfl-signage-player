@@ -1,7 +1,7 @@
 HFL Signage Player
 ==================
 
-Digital signage player written by Henrik Franciscus Leppä
+Digital signage player written by Henrik Franciscus Leppä (HFL)
 
 <table>
   <tr>
@@ -39,6 +39,14 @@ Digital signage player written by Henrik Franciscus Leppä
     </td>
   </tr>
 </table>
+
+
+[Changelog]
+-----------
+
+
+[MIT License]
+-------------
 
 
 Main Features
@@ -116,19 +124,8 @@ Workflow
 This project uses [git-flow] with default settings.
 
 
-[Changelog]
------------
-
-
-Copyright
----------
-
-Copyright © 2018 Henrik Franciscus Leppä
-
-All rights reserved.
-
-
+[Changelog]: ./CHANGELOG.md
+[MIT License]: ./LICENSE.md
 [Node Version Manager (NVM)]: https://github.com/creationix/nvm
 [Windows-equivalents]: https://github.com/creationix/nvm#important-notes
 [git-flow]: https://github.com/nvie/gitflow
-[Changelog]: ./CHANGELOG.md

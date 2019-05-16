@@ -1,10 +1,9 @@
 {
   "name": "hfl-signage-player-front-end",
   "version": "0.3.0",
-  "description": "Front-end for a digital signage player written by Henrik Franciscus Leppä",
+  "description": "Front-end for a digital signage player written by Henrik Franciscus Leppä (HFL)",
   "author": "Henrik Franciscus Leppä",
-  "license": "UNLICENSED",
-  "private": true,
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/henrik-leppa/hfl-signage-player.git"

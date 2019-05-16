@@ -43,6 +43,10 @@ HFL Signage Player: Back-end
 Hosts a [PouchDB] database and an upload directory.
 
 
+[MIT License]
+-------------
+
+
 Getting Started / Installation
 ------------------------------
 
@@ -57,14 +61,7 @@ Getting Started / Installation
      files of Front-end and Management UI!
 
 
-Copyright
----------
-
-Copyright © 2018 Henrik Franciscus Leppä
-
-All rights reserved.
-
-
 [Express.js]: https://github.com/expressjs/express
 [PouchDB]: https://github.com/pouchdb/pouchdb
 [HFL Signage Player]: https://github.com/henrik-leppa/hfl-signage-player
+[MIT License]: ./LICENSE.md
